@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Models</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body onload="setValues(); rgb();">
+  <div class="container"><br>
+    <br>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+      <a class="navbar-brand" href="index.html"><h1>Color Models</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only sr-only-focusable">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rgb.html">RGB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cmyb.html">CMY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="web-safe-color.html">Web Safe Color</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+    <div class="card ">
+        
+      <div class="card-title alert alert-danger">
+        <h4><b class="red">RED</b> <b class="green">GREEN</b><b class="blue"> BLUE</b>(<b class="red">R</b><b class="green">G</b><b class="blue">B</b>)</h4>
+      </div>
+      <div class="card-body">
+    
+        
+          
+        <p><b class="red">R</b><b class="green">G</b><b class="blue">B</b> is an additive color projected light color where each color is stored in one byte.</p>
+          <p>all possible combinations of <b class="red">Red</b>,<b class="green"> green</b> and <b class="blue">blue</b> give 2^24= 16,777,216 diffrent colors.</p>
+        <p>starting with (<b class="red">Red</b>,<b class="green"> green</b>,<b class="blue"> blue</b>)=(0,0,0)(black),to which different color"ligths" are added to produce visible colors.</p>
+      
+      </div>
+      </div>
+    </div>
+    <div class="col">
+    <div class="card ">
+       
+      <div class="card-title alert alert-success">
+        <h4><b><b class="red">RED</b> <b class="green">GREEN</b><b class="red">BLUE</b>(<b class="red">R</b><b class="green">G</b><b class="blue">B</b>)</h4>
+      </div>
+      <div class="card-body">
+        <h3><b class="red"> Red:</b></h3><select id="red" name="color"></select> 
+        <h3> <b class="green">Green:</b></h3> <select id="green" name="color"></select> 
+        <h3><b class="blue"> Blue:</b></h3><select onchange="displayRGBColors();" id="blue" name="color"></select> 
+    
+      <table class="table table-stripped text-center" id="output">
+        <thead class="text-white bg-info">
+         <tr><th><b class="red">R</b><b class="green">G</b><b class="blue">B</b> float values</th><th><b class="red">R</b><b class="green">G</b><b class="blue">B</b> hexadecimal values</th><th>display</th></tr>
+           </thead>
+         </table>
+        </div>
+        </div>
+      </div>
+    </div>
+     
+    
+     <div class="text-center">
+        <button onclick ="generaterandomcolors();" type="button" class="btn btn-danger" >Generate random colors</button>
+      </div>
+  
+  </div>
+   
+    <hr>
+    <footer class="text-center"><kbd>&copy; 2019 M. Bouguerra. All rights reserved.</kbd></footer>
+  </div>
+</div>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
